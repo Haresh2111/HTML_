@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="url.php" method="get">
+        <h2>Travel Form</h2>
+        <!-- Text area for input Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <br>
+
+        <label for="age">Age:</label>
+        <input type="number"id="age" placeholder="Your Age">
+        <br>
+
+        <!-- Numric type for Cell -->
+        <label for="number">Number</label>
+        <input type="number" id="number">
+        <br>
+
+        <!-- Email type for email address -->
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br>
+
+        <!-- Radio button -->
+        <p>Please select Gender: <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <br>
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+        <br>
+        </p>
+
+        <!-- date type -->
+        <label for="date">Please Select date:</label>
+        <input type="datetime-local" name="date" id="date">
+        <br>
+
+        <!-- Range type -->
+        <label for="range">Select Hiking Range:</label>
+        <input type="range" name="range" id="range" min="3500m" max="6000m">
+        <br>
+
+        <!-- Search type -->
+         <label for="search">Please Search your prefer Mountain</label>
+        <input type="search" name="Searching" id="search">
+        <!-- Checkbox type (checked by default for 10-19k, so it would be checked by default in every form) -->
+        <p>Please select Budget: <br>
+        <label for="lowerrange">10K-19K</label>
+        <input type="checkbox" name="" id="lowerrange" checked>
+        <br>
+        <label for="midrange">20K-29K</label>
+        <input type="checkbox" name="" id="midrange">
+        <br>
+        <label for="uprange">30K-39K</label>
+        <input type="checkbox" name="" id="uprange">
+        <br>
+        <label for="upprange">40K-59K</label>
+        <input type="checkbox" name="" id="upprange" disabled>
+        
+        <br>
+
+        <!-- Select tag -->
+        </p>
+        <label for="none">Select preference:</label>
+        <select name="hotel" id="none"> 
+            <option value="">Please select Hotel</option>
+            <option value="3-star">3-star</option>
+            <option value="Tent">Tent</option>
+            <option value="GuestHouse">GuestHouse</option>
+        </select>
+        <br>
+
+        <!-- File type -->
+         <label for="">Attached File:</label>
+        <input type="file" name="" id="">
+        <br>
+
+        <!-- Multiple option with the diffenet option group(optgroup) -->
+        <label for="goFood">Selct Food</label>
+        <select name="Food" id="goFood" multiple>
+            <optgroup label="Fruits">
+                <option value="Apple" disabled>Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Pineapple">Pineapple</option>
+            </optgroup>
+            <optgroup label="Juice">
+               <option value="watermelon" selected>watermelon</option>
+               <option value="orange">orange</option>
+            </optgroup>
+        </select>
+        <br>
+        <!-- Text area -->
+        <label for="textarea">Please enter your Extra details:</label> <br>
+        <textarea name="" id="textarea" rows="10" cols="15"></textarea>
+        <br>
+
+        <!-- Add video from internet  -->
+        <label for="">Please Watch below video to know the places:</label>
+        <br>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=6OkIn4NQIe0uy22A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- Video/audio can be use to add Video/audio from local system -->
+        <video src=""></video>
+        <audio src=""></audio>
+        
+        
+        <!-- Reset and submit -->
+        <input type="reset" value="Reset">
+        <input type="button" value="Submit">
+
+    </form>
+</body>
+</html>
