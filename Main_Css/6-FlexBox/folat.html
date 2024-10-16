@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+        }
+        .main{
+            width: 50%;
+            height: 70vh;
+            border: 2px solid darkblue;
+            margin: 25px auto;
+            background-color: rgb(228, 228, 206);
+            
+        }
+        .container{
+            width: 250px;
+            border: 2px solid darkorchid;
+            border-radius: 20px;
+            margin: 3px 3px;
+            padding: 5px 5px;
+            background-color: lightcyan;
+            box-sizing: border-box;
+        }
+        #one{
+            float: left;
+            height: 150px;
+            width: 50%;
+        }
+        #two{
+            float: right;
+            width: 45%;
+        }
+        #three{
+            clear: both;
+            float: right;
+        }
+        #four{
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h3>Hello All Containers</h3>
+        <div class="container" id="one">
+            <p>This is Container 1</p>
+        </div>
+        <div class="container" id="two">
+            <p>This is Container 2</p>
+        </div>
+        <div class="container" id="three">
+            <p>This is Container 3</p>
+        </div>
+        <div class="container" id="four">
+            <p>This is Container 4</p>
+        </div>
+    </div>
+</body>
+
+</html>

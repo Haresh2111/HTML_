@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 70%;
+            height: 75vh;
+            border: 2px solid blue;
+            margin: 3px 0px 0px 3px;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: wrap;
+            /* flex-flow: column wrap; */
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            /* remove spaces between boxes. This property only applies  if there are multiple wrapped Lines. */
+        }
+
+        .cont {
+            border: 2px solid black;
+            width: 15%;
+            height: 20vh;
+            margin: 3px;
+        }
+
+        #box1 {
+            background-color: lightblue;
+            /* float: right; */
+        }
+
+        #box2 {
+            background-color: rgb(255, 224, 248);
+            /* float: right; */
+        }
+
+        #box3 {
+            background-color: rgb(173, 230, 214);
+            /* float: left; */
+            /* flex-grow: 4; */
+        }
+
+        #box4 {
+            background-color: rgb(208, 230, 173);
+            /* float: left; */
+            /* flex-shrink: 4; */
+        }
+
+        #box5 {
+            background-color: rgb(189, 221, 191);
+            align-self: flex-start;
+            order: 7;
+            /*If order value is high, it'll go at the end */
+        }
+
+        #box6 {
+            background-color: rgb(216, 173, 230);
+            order: 2;
+        }
+
+        #box7 {
+            background-color: rgb(230, 204, 173);
+        }
+
+        #box8 {
+            background-color: rgb(230, 173, 178);
+            /* flex: 2 1 auto;  means 2is grow, 1 shrink, adjust auto into space*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont" id="box1">
+            Box 1
+        </div>
+        <div class="cont" id="box2">
+            Box 2
+        </div>
+        <div class="cont" id="box3">
+            Box 3
+        </div>
+        <div class="cont" id="box4">
+            Box 4
+        </div>
+        <div class="cont" id="box5">
+            Box 5
+        </div>
+        <div class="cont" id="box6">
+            Box 6
+        </div>
+        <div class="cont" id="box7">
+            Box 7
+        </div>
+        <div class="cont" id="box8">
+            Box 8
+        </div>
+    </div>
+</body>
+
+</html>

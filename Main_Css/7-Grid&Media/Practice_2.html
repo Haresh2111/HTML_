@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice_2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: black;
+            /* height: 5vh; */
+        }
+        ul{
+            display:flex;
+            /* grid-template-columns: repeat(20,auto);
+            justify-content: right; */
+            flex-direction: row-reverse;
+        }
+        ul li{
+            list-style: none;
+            /* border: 1px solid lightgrey; */
+            margin:11px 15px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .container{
+            background-color: lightblue;
+            width: 100vw;
+            height: 65vh;
+            display: grid;
+            grid-gap: 2px 2px;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            margin: 3px 0px;
+        }
+        .box1{
+            border:2px solid darkblue;
+            width: 250px;
+            height:56vh;
+            background-color: aliceblue;
+        }
+        .box2{
+            border:2px solid darkblue;
+            width: 250px;
+            height:56vh;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="">Home</a></li>
+            <li id="contact"><a href="">Contact</a></li>
+            <li id="about"><a href="">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+    </div>
+</body>
+</html>

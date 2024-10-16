@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row-reverse;
+            list-style: none;
+        }
+
+        li {
+            padding: 10px 30px;
+        }
+
+        .image {
+            background-image: url('im.jpg');
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 35vh;
+            background-position: center bottom;
+        }
+
+        .container {
+            width: 100%;
+            height: 90vh;
+            border: 1px solid burlywood;
+            display: flex;
+            flex-direction: row;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .con {
+            border: 2px solid black;
+            width: 25vw;
+            height:500px;
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="image">
+    </div>
+    <div class="container">
+        <div class="con" id="box1">
+            Box1
+        </div>
+        <div class="con" id="box2">
+            Box2
+        </div>
+        <div class="con" id="box3">
+            Box3
+        </div>
+    </div>
+</body>
+
+</html>

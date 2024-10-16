@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarginCollapse</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            background-color: bisque;
+            margin: 15px 25px;
+        }
+        .container2{
+            background-color: aliceblue;
+            /* Here, if we give Margin 10px, it would collapse because we already gave 15px to the above element. So, it would consider the higher margin */
+            margin: 10px 65px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container1"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate unde totam sint. Consequatur asperiores ipsa repellat tenetur enim corrupti ea laudantium. Nam iste sequi dolorem nihil nobis eius! Atque fugit possimus illum, officiis laboriosam ullam!</p></div>
+
+    <div class="container2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cum error, dolore blanditiis hic quia. Numquam corrupti error atque dolorem minima, ducimus, optio dolores rerum ratione deleniti in maxime debitis?</p></div>
+</body>
+</html>

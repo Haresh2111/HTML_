@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container1 {
+            /*Inline block would be same as Inline but here, we can set width, height and padding, Means it won't take whole space but It take space as you give that block */
+            display: inline-block;
+            /* Display: inline means it take space it's required. And you can't set Paddng, width and height*/
+            background-color: lightcyan;
+            width: 233px;
+            height: 125px;
+            padding: 10px 5px;
+        }
+
+        .cotainer2 {
+            /* Display: none means It'll remove element and space */
+            background-color: lightyellow;
+            width: 533px;
+            height: 125px;
+            /* display: inline-block; */
+            /* It'll hidden that element but space should be there */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container's display is block because container is block element. display:block (It take whole space) -->
+    <div class="container1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veritatis corrupti eos, laborum cum eius?
+        </p>
+    </div>
+    <div class="cotainer2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, vero sint! lousi</p>
+    </div>
+</body>
+
+</html>

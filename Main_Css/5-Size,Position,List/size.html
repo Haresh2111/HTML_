@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size</title>
+    <style>
+        #one {
+            /* em means, it would multiply with their parent element font-size. */
+            font-size: 3em;
+        }
+
+        .two {
+            /* rem means it would multiply with the html font-size element */
+            font-size: 2rem;
+        }
+        .hori{
+            width: 50vw; /*50 ve means half of the page widht*/
+            height:15vh;
+            background-color: rgb(199, 243, 243);
+            display: inline-block;
+        }
+        .vert{
+            height: 50vh; /* 50 vh means half of the page height*/
+            width: 40%;
+            background-color: bisque;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <p id="one">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero tenetur fugiat blanditiis deleniti ea ducimus
+        </p>
+    </div>
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="hori">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="vert">
+        Lorem, ipsum dolor.
+    </div>
+</body>
+
+</html>

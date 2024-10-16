@@ -1,0 +1,18 @@
+/* Below is universal selector. Bt doing margin and Padding:0 means,it will took Margin as 0 and padding 0. It will override the value of default browser padding and margin */
+/* You can normally do change margin and padding in other CSS code. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    background-color: black;
+    color: beige;
+    margin: 5px 5px;
+    padding: 20px 5px;
+}
+
+.col_ {
+    background-color: bisque;
+    color: brown;
+}

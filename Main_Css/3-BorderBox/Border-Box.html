@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 180px;
+            height: 900px;
+            border: 2px solid blue;
+            background-color: aliceblue;
+            /* padding: 5px 5px; */
+            /* margin: 25px 5px; */
+        }
+        .sub-child{
+            padding: 0px 10px ;
+            margin: 5px 0px;
+            width: 100%;
+            height: 200px;
+            border: 5px solid grey;
+            box-sizing: border-box;
+            /* Default box-sizing is Content-box */
+            /* Border-box includes padding and border size under width and height */
+            /* Content-Box means when you give height and width, it would apply to content, and border and padding size shuoldn't be mapped over height and width */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis culpa facilis. Sit a cumque odit quam
+            quae rerum quia optio, pariatur incidunt voluptas, minus officia sapiente ullam excepturi consectetur,
+            laudantium architecto! Ducimus assumenda ut distinctio eius fugiat atque molestias eligendi iusto accusamus?
+            Eos repudiandae, ea exercitat, tempora voluptatibus rerum. Similique numquam eaque, illum
+            necessitatibus temporibus ea quo nostrum consequuntur harum minima. Consequuntur eos autem tenetur id
+            officia sequi, omnis porro dignissimos est, ipsam expedita, ab tempora.</p>
+        <div class="sub-child">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium adipisci optio dignissimos
+                provident consequatuites! Cum mollitia alias laudantium sit nam veritatis quod iste.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

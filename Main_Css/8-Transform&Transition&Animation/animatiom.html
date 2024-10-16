@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            width: 60vw;
+            height: 70vh;
+            background-color: lightgoldenrodyellow;    
+           
+        }
+        img:hover{
+            @keyframes WidthAnimation {
+                from{
+                    width: 420px;
+                }
+                to{
+                    width:720px;
+                }
+                
+            }
+            /* animation: WidthAnimation 3S ease-in 1s 3 reverse; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="pexels1.jpeg" alt="" width="420px"
+            height="300px">
+    </div>
+</body>
+</html>

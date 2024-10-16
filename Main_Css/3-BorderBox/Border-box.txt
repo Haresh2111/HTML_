@@ -1,0 +1,18 @@
+Example Of border-box
+
+Child element contains 100% width mans as parent contains 180px (width).
+
+> Width and height only applies to Content. Border Size and Padding size shouldn't included in width/height.
+
+If we didn't apply border-box, it(Child) would contain 180px (width/content) + 10px padding (right) +10px padding (Left) + 5px border (right) + 5px border (left) and 200px height of content
+
+Total width= 210px contains that Child.
+Total height =200px + 5px top + 5px bottom =210px
+
+If we apply border-box for Child, it would contains width of parent element which is 180px. And Padding and border would be included in that Widht.
+
+So, here it would be Total=180px. (Content/Width=150 px + 10px border +20px padding)
+And Content_height would be Total of content =200px -10px bordr(5px left and 5px right) =190px 
+
+
+> Margin wouldn't be considered under Border-box.
